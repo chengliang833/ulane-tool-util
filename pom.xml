@@ -4,6 +4,14 @@
   <artifactId>ulane-tool-util</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+	<repositories>
+		<repository>
+			<id>nexus_ulane</id>
+			<name>nexus_ulane</name>
+			<url>http://nexus.ulane.top/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
+	
 	<dependencies>
 		<dependency>
 			<groupId>wang.ulane</groupId>
@@ -81,7 +89,9 @@
 			</plugin>
 	    </plugins>
 	</build>
-
+	
+	
+	
 	<distributionManagement>
 		<snapshotRepository>
 			<id>snapshots</id>
