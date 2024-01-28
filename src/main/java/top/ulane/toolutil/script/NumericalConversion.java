@@ -2,12 +2,12 @@ package top.ulane.toolutil.script;
 
 public class NumericalConversion {
 	
-	public static String intToHex(Integer i){
-		return Integer.toHexString(i);
+	public static String longToHex(Long i){
+		return Long.toHexString(i);
 	}
 	
-	public static String intToBina(Integer i){
-		return Integer.toBinaryString(i);
+	public static String longToBina(Long i){
+		return Long.toBinaryString(i);
 	}
 	
 }
