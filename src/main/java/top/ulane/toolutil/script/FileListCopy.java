@@ -18,7 +18,7 @@ public class FileListCopy {
             toDir.mkdirs();
         }
         String filePathStr = ClipboardUtil.getSysClipboardText();
-        String[] filePaths = filePathStr.split("[,\r\n]");
+        String[] filePaths = filePathStr.split("[,\r\n]+");
         FileDeepCopy fileDeepCopy = new FileDeepCopy();
         File samePathDir = null;
         if("relate".equals(copyType)){
