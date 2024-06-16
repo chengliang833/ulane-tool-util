@@ -13,7 +13,7 @@ public class CustomAll {
 //		args = new String[]{"file_changewrap_n", "C:\\Users\\eshonulane\\Desktop\\temp\\test"};
 //		args = new String[]{"eclipse_terminal", "C:\\Users\\eshonulane\\Desktop\\temp\\test2\\workbench.xmi"};
 //		args = new String[]{"file_list_copy"};
-		
+
 		if(args == null || args.length < 1){
 			throw new RuntimeException("要入参的");
 		}
@@ -62,6 +62,9 @@ public class CustomAll {
 				break;
 			case "image_to_base64":
 				System.out.print("data:image/jpg;base64,"+ImageUtil.getImgStr(param1));
+				break;
+			case "doc_to_string":
+				DocToString.execute(param1);
 				break;
 			default:
 				System.out.println("no selected...");
